@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image and Script Example</title>
     <style>
-            body {
+        body {
             font-family: Arial, sans-serif;
         }
         .large-image {
@@ -16,7 +16,8 @@
         }
         .spacer {
             height: 12000px; /* Large spacer to push content down */
-        }</style>
+        }
+    </style>
 </head>
 <body>
     <h1>Image and Script Example</h1>
@@ -33,7 +34,11 @@
     <!-- Image too big for the viewport -->
     <img src="./images/sea.jpg" alt="Image too big for viewport" class="large-image">
 
-    <!-- Deferred script -->
-    <script src="script.js"></script>
+    <!-- Heavy script -->
+    <script src="heavy-script.js"></script>
+
+    <!-- Blocking script -->
+    <script src="blocking-script.js"></script>
 </body>
 </html>
+
