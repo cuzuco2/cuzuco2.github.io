@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Script Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .large-image {
+            width: 2000px; /* Image too big for the viewport */
+        }
+        .out-of-viewport {
+            position: absolute;
+            top: 3500px; /* Positioning image out of the viewport */
+        }
+    </style>
+</head>
+<body>
+    <h1>Image and Script Example</h1>
+    
+    <!-- Image without defined size -->
+    <img src="./images/sea-star.jpg" alt="Image without defined size">
+
+    <!-- Image out of the viewport for Moto G4 -->
+    <img src="./images/sea-star.jpg" alt="Image out of viewport" class="out-of-viewport">
+
+    <!-- Image too big for the viewport -->
+    <img src="./images/sea.jpg" alt="Image too big for viewport" class="large-image">
+
+    <!-- Deferred script -->
+    <script src="script.js" defer></script>
+</body>
+</html>
