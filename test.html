@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Script Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .large-image {
+            width: 2000px; /* Image too big for the viewport */
+        }
+        .out-of-viewport {
+            margin-top: 15000px; /* Positioning image far out of the viewport */
+        }
+        .spacer {
+            height: 12000px; /* Large spacer to push content down */
+        }
+    </style>
+</head>
+<body>
+    <h1>Image and Script Example</h1>
+    
+    <!-- Image without defined size -->
+    <img src="https://cuzuco2.github.io/images/sea-star.jpg" width="150" height="150" alt="Image without defined size">
+
+    <!-- Large spacer to push content down -->
+    <div class="spacer"></div>
+
+    <!-- Image out of the viewport for Moto G4 -->
+    <img src="https://cuzuco2.github.io/images/sea-star.jpg" width="150" height="150" alt="Image out of viewport" class="out-of-viewport" loading="lazy">
+        
+    <!-- Image too big for the viewport -->
+    <img src="https://cuzuco2.github.io/images/sea.jpg" width="2688" height="1536" alt="Image too big for viewport" class="large-image" loading="lazy" srcset="https://cuzuco2.github.io/images/sea.jpg 1x, https://cuzuco2.github.io/images/sea@2x.jpg 2x" sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw">
+
+    <!-- Heavy script -->
+    <script src="https://cuzuco2.github.io/js/heavy-script.js" defer="true"></script>
+
+    <!-- Blocking script -->
+    <script src="https://cuzuco2.github.io/js/blocking-script.js" defer="true"></script>
+
+
+
+</body></html>
